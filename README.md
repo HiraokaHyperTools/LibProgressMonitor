@@ -1,5 +1,7 @@
 # LibProgressMonitor
 
+[docs](https://hiraokahypertools.github.io/LibProgressMonitor/)
+
 * 注意点
 form.run(
 		fork: true,
