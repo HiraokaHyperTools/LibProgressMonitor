@@ -7,7 +7,7 @@
 参考までに対応表です:
 
 | Eclipse, SWT | LibProgressMonitor |
-|---|---|
+| ------------ | ------------------ |
 | [Class ProgressMonitorDialog](https://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjface%2Fdialogs%2FProgressMonitorDialog.html) | [WaitForm](@ref kenjiuno.LibProgressMonitor.WaitForm) |
 | [Interface IProgressMonitor](https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fcore%2Fruntime%2FIProgressMonitor.html) | [IProgressMonitor](@ref kenjiuno.LibProgressMonitor.Interfaces.IProgressMonitor) |
 | [Interface IRunnableWithProgress](https://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjface%2Foperation%2FIRunnableWithProgress.html) | [IRunnableWithProgress](@ref kenjiuno.LibProgressMonitor.Interfaces.IRunnableWithProgress) |
