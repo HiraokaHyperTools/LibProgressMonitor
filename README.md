@@ -1,5 +1,7 @@
 # LibProgressMonitor
 
+[docs](https://hiraokahypertools.github.io/LibProgressMonitor/)
+
 使用例
 
 ```cs
