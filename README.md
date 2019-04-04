@@ -1,5 +1,13 @@
 # LibProgressMonitor
 
+* 注意点
+form.run(
+		fork: true,
+		cancelable: true,
+		runnable: new Runnable()
+);
+　fork:	true・・・非同期
+ 	false・・・メインスレッド上で実行のため、Contlorは使えない
 使用例
 
 ```cs
