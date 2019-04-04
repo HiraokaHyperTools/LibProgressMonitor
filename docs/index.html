@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LibProgressMonitor: 総合概要</title>
+<title>LibProgressMonitor: LibProgressMonitor</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,10 +62,32 @@ $(function() {
 
 <div class="header">
   <div class="headertitle">
-<div class="title">LibProgressMonitor 詳解</div>  </div>
+<div class="title">LibProgressMonitor </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><h2>概要</h2>
+<p>使用感は SWT の ProgressMonitor と似ています。似てはいますが、起動方法が異なります。</p>
+<p>参考までに対応表です:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone" colspan="2">Eclips   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjface%2Fdialogs%2FProgressMonitorDialog.html">Class ProgressMonitorDialog</a>  </td><td class="markdownTableBodyNone"><a class="el" href="classkenjiuno_1_1_lib_progress_monitor_1_1_wait_form.html">WaitForm</a>   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fcore%2Fruntime%2FIProgressMonitor.html">Interface IProgressMonitor</a>  </td><td class="markdownTableBodyNone"><a class="el" href="interfacekenjiuno_1_1_lib_progress_monitor_1_1_interfaces_1_1_i_progress_monitor.html">IProgressMonitor</a>   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjface%2Foperation%2FIRunnableWithProgress.html">Interface IRunnableWithProgress</a>  </td><td class="markdownTableBodyNone"><a class="el" href="interfacekenjiuno_1_1_lib_progress_monitor_1_1_interfaces_1_1_i_runnable_with_progress.html">IRunnableWithProgress</a>   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="https://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fcore%2Fruntime%2FNullProgressMonitor.html">Class NullProgressMonitor</a>  </td><td class="markdownTableBodyNone"><a class="el" href="classkenjiuno_1_1_lib_progress_monitor_1_1_utils_1_1_null_progress_monitor.html">NullProgressMonitor</a>   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">なし  </td><td class="markdownTableBodyNone"><a class="el" href="classkenjiuno_1_1_lib_progress_monitor_1_1_utils_1_1_progress_monitor_delegate_proxy.html">ProgressMonitorDelegateProxy</a>   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fcore%2Fruntime%2FProgressMonitorWrapper.html">Class ProgressMonitorWrapper</a>  </td><td class="markdownTableBodyNone"><a class="el" href="classkenjiuno_1_1_lib_progress_monitor_1_1_utils_1_1_progress_monitor_wrapper.html">ProgressMonitorWrapper</a>   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fcore%2Fruntime%2FSubProgressMonitor.html">Class SubProgressMonitor</a>  </td><td class="markdownTableBodyNone"><a class="el" href="classkenjiuno_1_1_lib_progress_monitor_1_1_utils_1_1_sub_progress_monitor.html">SubProgressMonitor</a>   </td></tr>
+</table>
+<h2>起動例</h2>
+<div class="fragment"><div class="line"><span class="keywordflow">try</span></div><div class="line">{</div><div class="line">    <span class="keyword">using</span> (var form = <span class="keyword">new</span> WaitForm())</div><div class="line">    {</div><div class="line">        form.run(</div><div class="line">            fork: <span class="keyword">true</span>,</div><div class="line">            cancelable: <span class="keyword">true</span>,</div><div class="line">            runnable: <span class="keyword">new</span> Runnable()</div><div class="line">        );</div><div class="line">    }</div><div class="line">}</div><div class="line"><span class="keywordflow">catch</span> (Exception ex)</div><div class="line">{</div><div class="line">    MessageBox.Show(ex.ToString());</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 構築: &#160;<a href="http://www.doxygen.org/index.html">
