@@ -1,6 +1,6 @@
 # LibProgressMonitor
 
-[docs](https://hiraokahypertools.github.io/LibProgressMonitor/)
+[ドキュメント](https://hiraokahypertools.github.io/LibProgressMonitor/)
 
 * 注意点
 form.run(
